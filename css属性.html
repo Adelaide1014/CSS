@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+/*设置字符的间距*/
+h1 {letter-spacing: -0.1em}
+h4 {letter-spacing: 20px}
+.title{color: red;}
+/*浏览器默认行间距是110%、或120%*/
+.v1{width: 400px;height:84px;border:2px solid #000;line-height: 150%;}
+.v2{width: 400px;height:84px;border:2px solid #000;line-height: 100%;}
+.v3{width: 400px;height:100px;border:2px solid #000;line-height: 100%;}
+.dire{direction: rtl;width: 300px;height: 100px;border:2px solid #000;text-decoration: blink;}
+.indexSuojin{width: 300px;height: 200px;text-indent: 1cm;}
+  p.uppercase {text-transform: uppercase}
+  p.lowercase {text-transform: lowercase}
+  p.capitalize {text-transform: capitalize}/*每个词语第一个字母大写*/
+.dire1{white-space: nowrap}
+p.spread {word-spacing: 30px;}
+p.tight {word-spacing: -0.5em;}
+</style>
+</head>
+
+<body>
+<div class="title">设置字符的间距</div>
+<h1>This is header 1</h1>
+<h4>This is header 4</h4>
+<div class="title">设置line-height行间距</div>
+<div class="v1">
+	这是第一行<br>
+	这是第二行
+</div>
+<div class="v2">
+	这是第一行<br>
+	这是第二行
+</div>
+<div class="title">设置文字的流入方向</div>
+<div class="dire">
+	这是第一行<br>
+	这是第二行
+</div>
+<div class="title">设置文字的首行缩进</div>
+<div class="indexSuojin">
+	这是第一行这是第二行这是第二行
+	这是第二行这是第二行这是第二行
+	这是第二行这是第二行这是第二行
+	这是第二行这是第二行这是第二行
+	这是第二行这是第二行这是第二行
+</div>
+<div class="title">设置英文大小写转换</div>
+<div class="v3">
+	<p class="uppercase">This is a fun day</p>
+	<p class="lowercase">THIS is a fun day</p>
+	<p class="capitalize">This is a fun day</p>
+</div>
+
+<div class="title">禁止文字换行</div>
+<div class="dire1">
+	这是第一行<br>
+	这是第二行这是第二行这是第二行这是第二行这是第二行这是第二行这是第二行这是第二行这是第二行
+</div>
+<div class="title">设置单词间距</div>
+<p class="spread">This is some text. This is some text.</p>
+<p class="tight">This is some text. This is some text.</p>
+</body>
+</html>

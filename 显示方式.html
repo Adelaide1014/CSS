@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>显示方式</title>
+	</head>
+	<style type="text/css">
+		.div1{cursor: text;display: list-item;float: left;margin: 0 10px;}
+		/*
+		 * 内联元素：元素前后没有换行符
+		 * 块级元素：单独一行显示
+		 */
+		q:lang(no){ quotes: "~" "~"}
+
+	</style>
+	<body>
+		<div>可以指定光标类型</div>
+		<div class="div1">怎样作为列表显示</div>
+		<div class="div1">怎样作为列表显示</div>
+		<div class="div1">怎样作为列表显示</div>
+		<p>文字<q lang="no">段落中的引用的文字</q>文字</p>
+
+	</body>
+</html>

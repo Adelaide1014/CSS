@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>border各种属性</title>
+<style type="text/css">
+.v1{width: 404px;height:200px;border:20px;background: blue;padding-top: 10px;margin: 0 auto;
+	border-style: dotted solid dashed double;}
+span{color:white;}
+table{border:1px solid #000;}
+/*dotted:点状;solid：实线；dashed:虚线;
+double：双边线;双线的宽度等于 border-width 的值。*/
+
+
+.v2{width: 40%;height:100px;background: red;margin: 10px auto;direction: rtl;border:1px solid #000;border-style: hidden;}
+.v3{width: 404px;height:200px;border:20px;background: blue;padding-top: 10px;margin: 0 auto;
+	border-style: groove;border-color:orange;}
+	/*其效果取决于 border-color 的值*/
+.v4{width: 404px;height:200px;border:20px;background: blue;margin: 10px auto;
+	border-style: ridge;border-color:orange;}
+.v5{width: 404px;height:200px;border:20px;background: blue;margin: 10px auto;
+	border-style: inset;}
+.v6{width: 404px;height:200px;border:20px;background: blue;margin: 10px auto;
+	border-style: outset;}
+.v7{border-style:solid;border-bottom:thick dotted #ff0000;}
+p.soliddouble {border-style: solid double}
+p.doublesolid {border-style: double solid}
+p.groovedouble {border-style: groove double}
+p.three {border-style: solid double groove}
+
+.a{width: 400px;height:200px;direction: rtl;background: #cccccc;display: inline-block;}
+</style>
+</head>
+
+<body>
+<div class="v1"><span>这里是对对border的样式进行设置</span></div>
+<div class="v2">
+	<span>这里是验证，border-style='hidden'用于解决表格边框冲突问题</span>
+	<table>
+		<tr><td>边框</td><td>边框</td></tr>
+		<tr><td>边框</td><td>边框</td></tr>
+	</table>
+</div>
+<div class="v3"><span>groove是3D效果边框</span></div></div>
+<div class="v4"><span>ridge是3D垄状边框</span></div></div>
+<div class="v5"><span>inset边框</span></div></div>
+<div class="v6"><span>outset边框</span></div></div>
+<div class="v7"><span>对边框的底边进行设置</span></div></div>
+
+<p class="soliddouble">Some text</p>
+<p class="doublesolid">Some text</p>
+<p class="groovedouble">Some text</p>
+<p class="three">Some text</p>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+/*设置字符的间距*/
+h1 {letter-spacing: -0.1em}
+h4 {letter-spacing: 20px}
+.title{color: red;}
+/*浏览器默认行间距是110%、或120%*/
+.v1{width: 404px;height:400px;border:2px solid #000;background: blue;padding-top: 10px;margin: 0 auto;}
+
+/*边的宽度是不计算在宽度当中的*/
+.v2{width: 40%;height:100px;background: red;float: left;margin-right: 10px;direction: rtl;}
+.v3{width:100%;height:100px;border:2px solid #000;background: green;margin-left: 12px;float: left;}
+.v3 div {direction: rtl;}
+.a{width: 400px;height:200px;direction: rtl;background: #cccccc;display: inline-block;}
+</style>
+</head>
+
+<body>
+<div class="v1">
+<div class="v2">我想看看文字的方向</div>
+<div class="v3">我想看看文字的方向，这些是正常没设置的文字<div><a href="">更多</a></div></div>
+</div>
+<a href="" class="a">在那里</a>
+</body>
+</html>

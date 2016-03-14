@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>伪类</title>
+	</head>
+	<style type="text/css">
+		/*伪类定义
+		 * 锚伪类
+		 * 在支持 CSS 的浏览器中，链接的不同状态都可以不同的方式显示，这些状态包括：活动状态，已被访问状态，未被访问状态，和鼠标悬停状态。
+		 * :active 伪类向激活（在鼠标点击与释放之间发生的事件）的元素添加特殊的样式。
+		 * a:link {color: #FF0000}      未访问的链接 
+		 * a:visited {color: #00FF00}   已访问的链接 
+		 * a:hover {color: #FF00FF}     当有鼠标悬停在链接上
+		 * a:active {color: #0000FF}    被选择的链接 
+		 * 为了产生预期的效果，在 CSS 定义中，a:hover 必须位于 a:link 和 a:visited 之后！！
+		 * 为了产生预期的效果，在 CSS 定义中，a:active 必须位于 a:hover 之后！！
+		 */
+		/* :first-child 伪类对另一个元素的第一个子元素进行匹配。
+		 * :first-child（首个子对象） 
+		 */
+		p:first-child{font-weight: bold;}
+		/*:lang 伪类使你有能力为不同的语言定义特殊的规则。
+		 */
+		q:lang(no){quotes: "~" "~"}
+		
+	</style>
+	<body>
+		<p>这是第一个P标签，是粗体</p>
+		<p>文字<q lang="no">段落中的引用的文字</q>文字</p>
+
+	</body>
+</html>
